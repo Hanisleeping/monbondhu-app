@@ -10,7 +10,7 @@ import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import 'leaflet/dist/leaflet.css';
 
 // Import our layout and pages
-import Layout from './components/Layout';
+import Layout from './Components/Layout';
 import Home from './pages/Home';
 import Map from './pages/Map';
 import Help from './pages/Help';

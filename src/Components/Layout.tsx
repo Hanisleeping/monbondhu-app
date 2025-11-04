@@ -107,7 +107,7 @@ export default function Layout() {
         <Box sx={style}>
           <Typography variant="h6" component="h2">শুনছি...</Typography>
           <Typography sx={{ mt: 2 }}>{transcript || "বলুন..."}</Typography>
-          <Button onClick={handleVoiceStop} sx={{ mt: 2 }}>থামান</Button>
+          
         </Box>
       </Modal>
 
@@ -116,7 +116,7 @@ export default function Layout() {
         <BottomNavigation
           showLabels
           value={navValue}
-          onChange={(_, newValue) => {
+          onChange={(event , newValue) => {
             setNavValue(newValue);
             if (newValue === 0) navigate('/');
             else if (newValue === 1) navigate('/map');
